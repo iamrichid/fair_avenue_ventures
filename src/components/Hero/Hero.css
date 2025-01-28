@@ -1,0 +1,12 @@
+.hero{
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    justify-content: center;
+    margin-left: 3rem;
+    /* text-align: center; */
+    /* align-items: center; Center the text vertically */
+    font-weight: bold;   /* Make the text bold */
+    font-family: 'Roboto', sans-serif; /* Set font type to Roboto */
+    font-size: 1.2rem; /* Set font size to 24px */
+}
