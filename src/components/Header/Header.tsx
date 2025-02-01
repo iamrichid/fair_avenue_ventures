@@ -24,12 +24,8 @@ const Header = () => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
       };
     
-      // Function to go to the previous slide
-      const prevSlide = () => {
-        setCurrentIndex((prevIndex) =>
-          prevIndex === 0 ? images.length - 1 : prevIndex - 1
-        );
-      };
+    
+      
 
     useEffect(() => {
         const interval = setInterval(nextSlide, 3000); // Change slide every 3 seconds

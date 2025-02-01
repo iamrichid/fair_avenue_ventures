@@ -105,7 +105,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div className="mb-4">
                     <label className="block text-sm font-medium text-gray-700" htmlFor="message">Message</label>
-                    <textarea id="message" name="message" required className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-primary" rows="4"></textarea>
+                    <textarea id="message" name="message" required className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-primary"></textarea>
                   </div>
                   <button type="submit" className="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-primary hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">
                     Send Message
