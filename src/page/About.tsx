@@ -11,11 +11,11 @@ const Header = () => {
 <header className="py-4 md:py-6">
     <div className="container px-4 mx-auto sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-            <div className="flex-shrink-0">
-                <a href="#" title="" className="flex rounded outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2">
+        <div className="flex-shrink-0">
+                <NavLink to="/" title="" className="flex rounded outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2">
                 <img className="w-auto h-4" src={mainl} alt="" />
                     <img className="w-auto h-4 ml-2" src={logo} alt="" />
-                </a>
+                </NavLink>
             </div>
 
             <div className="flex lg:hidden">
