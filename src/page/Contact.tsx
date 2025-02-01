@@ -84,7 +84,7 @@ const Contact: React.FC = () => {
         <div className="container px-4 mx-auto sm:px-6 lg:px-8">
           <div className="-mx-4 flex flex-wrap lg:justify-between">
             <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
-              <div className="mb-12 max-w-[570px] lg:mb-0">
+            <div className="mb-12 max-w-[570px] lg:mb-0">
                 <span className="mb-4 block text-base font-semibold text-primary">
                   Contact Us
                 </span>
@@ -92,9 +92,30 @@ const Contact: React.FC = () => {
                   GET IN TOUCH WITH US
                 </h2>
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-dark-6">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius tempor incididunt ut labore e dolore magna aliqua. Ut enim adiqua minim veniam quis nostrud exercitation ullamco
+                  Please fill out the form below to get in touch with us.
                 </p>
-                <div className="mb-8 flex w-full max-w-[370px]">
+                <form action="mailto:NANAAFIA521@GMAIL.COM" method="post" encType="text/plain">
+                  <div className="mb-4">
+                    <label className="block text-sm font-medium text-gray-700" htmlFor="name">Name</label>
+                    <input type="text" id="name" name="name" required className="mt-1 p-3 block w-full border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-primary" />
+                  </div>
+                  <div className="mb-4">
+                    <label className="block text-sm font-medium text-gray-700" htmlFor="email">Email</label>
+                    <input type="email" id="email" name="email" required className="mt-1 p-3 block w-full border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-primary" />
+                  </div>
+                  <div className="mb-4">
+                    <label className="block text-sm font-medium text-gray-700" htmlFor="message">Message</label>
+                    <textarea id="message" name="message" required className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-primary" rows="4"></textarea>
+                  </div>
+                  <button type="submit" className="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-primary hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">
+                    Send Message
+                  </button>
+                </form>
+            </div>
+              </div>
+
+              <div>
+<div className="mt-8 mb-8 flex w-full max-w-[370px]">
                   <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]">
                     <svg
                       width="32"
@@ -111,17 +132,38 @@ const Contact: React.FC = () => {
                   </div>
                   <div className="w-full">
                     <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
-                      Our Location
+                      Our Digital Address Location
                     </h4>
                     <p className="text-base text-body-color dark:text-dark-6">
-                      99 S.t Jomblo Park Pekanbaru 28292. Indonesia
+                     GT-138-9752
                     </p>
                   </div>
                 </div>
-
-                {/* Add other sections here as needed */}
-              </div>
-            </div>
+                <div className="mt-8 mb-8 flex w-full max-w-[370px]">
+                  <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]">
+                    <svg
+                      width="32"
+                      height="32"
+                      viewBox="0 0 32 32"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16 2C8.268 2 2 8.268 2 16c0 7.732 6.268 14 14 14s14-6.268 14-14C30 8.268 23.732 2 16 2zm0 26c-6.627 0-12-5.373-12-12S9.373 4 16 4s12 5.373 12 12-5.373 12-12 12zm-1-17h2v6h-2zm0 8h2v2h-2z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div className="w-full">
+                    <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
+                      Phone Number
+                    </h4>
+                    <p className="text-base text-body-color dark:text-dark-6">
+                     0544908933 / 0303209145
+                    </p>
+                  </div>
+                </div>
+</div>
           </div>
         </div>
       </section>

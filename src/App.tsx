@@ -1,9 +1,9 @@
 
-import About from './components/About'
 import './App.css'
+import About from './components/About'
 import Footer from './components/Footer'
 import Header from './components/Header/Header'
-import Services from './components/Services'
+import Services_ from './components/Services_'
 
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
     <>
     <div className='background-image'>
      <Header />
-     <Services />
+     <Services_ />
      <About />
      <Footer />
      </div>

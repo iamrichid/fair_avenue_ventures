@@ -2,8 +2,40 @@ import "./Header.css";
 import logo from "../../assets/FAIR AVENUE VENTURES.svg"; 
 import mainl from "../../assets/logo.png";
 import { NavLink } from "react-router";
+import { useState, useEffect } from "react";
+import image1 from "../../carouselle/carroselle_1.jpg";
+import image2 from "../../carouselle/carroselle_2.jpg";
+import image3 from "../../carouselle/carroselle_3.jpg";
+import image4 from "../../carouselle/carroselle_4.jpg";
 
 const Header = () => {
+
+    const images = [
+        image1, 
+        image2,
+        image3,
+        image4, 
+      ];
+
+      const [currentIndex, setCurrentIndex] = useState(0);
+
+
+      const nextSlide = () => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+      };
+    
+      // Function to go to the previous slide
+      const prevSlide = () => {
+        setCurrentIndex((prevIndex) =>
+          prevIndex === 0 ? images.length - 1 : prevIndex - 1
+        );
+      };
+
+    useEffect(() => {
+        const interval = setInterval(nextSlide, 3000); // Change slide every 3 seconds
+        return () => clearInterval(interval); // Cleanup on unmount
+    }, []); // Empty dependency array to run once on mount
+
   return (
     <div className="bg-gray-50">
 <header className="py-4 md:py-6">
@@ -88,8 +120,14 @@ const Header = () => {
             </div>
 
             <div>
-                <img className="w-full" src="https://d33wubrfki0l68.cloudfront.net/d6f1462500f7670e0db6b76b35054a081679a5a0/0ce15/images/hero/5.1/illustration.png" alt="" />
-            </div>
+                <img 
+                src={images[currentIndex]}
+                alt={`Slide ${currentIndex + 1}`}
+                className="w-full h-full object-cover rounded"/>
+            </div> 
+
+
+      
         </div>
     </div>
 </section>

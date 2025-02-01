@@ -1,7 +1,6 @@
-
 import '../App.css'; 
 
-const Services = () => {
+const Services_ = () => {
     return (
         <section className="py-12 bg-white sm:py-16 lg:py-20">
     <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
@@ -18,7 +17,7 @@ const Services = () => {
                     <path d="M45 29H33V45H41C43.209 45 45 43.209 45 41V29Z" fill="#D4D4D8" stroke="#161616" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
                 <h3 className="mt-12 text-xl font-bold text-gray-900 font-pj">Shipping Agency</h3>
-                <p className="mt-5 text-base text-gray-600 font-pj">Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet.</p>
+                <p className="mt-5 text-base text-gray-600 font-pj">We provide comprehensive shipping solutions, ensuring timely and secure delivery of goods across the globe. Our experienced team manages logistics to meet your shipping needs efficiently.</p>
             </div>
 
             <div className="md:p-8 lg:p-14 md:border-l md:border-gray-200">
@@ -30,7 +29,7 @@ const Services = () => {
                     <path d="M28 1H37V10" stroke="#161616" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
                 <h3 className="mt-12 text-xl font-bold text-gray-900 font-pj">Real Estate</h3>
-                <p className="mt-5 text-base text-gray-600 font-pj">Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet.</p>
+                <p className="mt-5 text-base text-gray-600 font-pj">Our real estate services focus on helping clients buy, sell, and rent properties. We offer expert guidance and support throughout the entire process, ensuring a smooth transaction.</p>
             </div>
 
             <div className="md:p-8 lg:p-14 md:border-l md:border-gray-200">
@@ -41,7 +40,7 @@ const Services = () => {
                     <path d="M35 7H24V35H35V7Z" fill="#D4D4D8" stroke="#161616" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
                 <h3 className="mt-12 text-xl font-bold text-gray-900 font-pj">Mining</h3>
-                <p className="mt-5 text-base text-gray-600 font-pj">Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet.</p>
+                <p className="mt-5 text-base text-gray-600 font-pj">We specialize in gold dealership, providing secure and trusted transactions. Our expertise in the mining sector ensures that you receive the best value for your investments.</p>
             </div>
 
             <div className="md:p-8 lg:p-14 md:border-t md:border-gray-200">
@@ -56,7 +55,7 @@ const Services = () => {
                     <path d="M37 1H5C2.79086 1 1 2.79086 1 5V37C1 39.2091 2.79086 41 5 41H37C39.2091 41 41 39.2091 41 37V5C41 2.79086 39.2091 1 37 1Z" stroke="#161616" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
                 <h3 className="mt-12 text-xl font-bold text-gray-900 font-pj">Trading</h3>
-                <p className="mt-5 text-base text-gray-600 font-pj">Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet.</p>
+                <p className="mt-5 text-base text-gray-600 font-pj">Our trading services facilitate seamless import and export operations, catering to both local and international markets. We ensure compliance with regulations and provide market insights to enhance your trading experience.</p>
             </div>
 
             
@@ -67,4 +66,4 @@ const Services = () => {
     )
 };
 
-export default Services;
+export default Services_;
